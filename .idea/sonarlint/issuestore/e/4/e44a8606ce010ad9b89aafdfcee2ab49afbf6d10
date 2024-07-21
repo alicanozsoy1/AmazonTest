@@ -1,0 +1,41 @@
+
+ˆ	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(ìÇ€Ğ8ôÔÜ­2J$08bc9c0c-7ab4-457a-939e-ebc85ba268cc
+ˆ	java:S112("FDefine and throw a dedicated exception instead of using a generic one.(ÚŞÕ³8õÔÜ­2J$76dffde8-a51b-4ee1-bdbe-0fa5bacecd6d
+œ
+java:S1104"YMake defaultClient a static final constant or non-public and provide accessors if needed.(ÖŒ¸î8öÔÜ­2J$98b7acf1-fbb5-453a-91eb-2ecd95890f3e
+¦
+java:S1104"^Make inboxControllerApi a static final constant or non-public and provide accessors if needed.(ÒóÊ¿ùÿÿÿÿ8÷ÔÜ­2J$02595af0-d712-4358-a87c-6de957eb140c
+—
+java:S1104 "TMake inboxDto a static final constant or non-public and provide accessors if needed.(Û£ñ©8÷ÔÜ­2J$e16964c0-d1af-462d-b877-e978894381ac
+”
+java:S1104!"QMake email a static final constant or non-public and provide accessors if needed.(Ÿİ8÷ÔÜ­2J$62cd82aa-bfbb-411f-a2f5-aaddd9e8c934
+›
+java:S1104""SMake inboxId a static final constant or non-public and provide accessors if needed.(¨ï¶‹ùÿÿÿÿ8÷ÔÜ­2J$89767a95-877a-435d-b153-4fea8846c653
+¢
+java:S1104#"`Make waitForControllerApi a static final constant or non-public and provide accessors if needed.(¼æÔU8÷ÔÜ­2J$2b67f35f-285f-4fe2-9c37-8d3c491c3026
+
+java:S1104$"VMake httpClient a static final constant or non-public and provide accessors if needed.(êüÕ„ıÿÿÿÿ8÷ÔÜ­2J$a540c593-d582-410d-9039-fee3e59d2858
+¦
+java:S1104%"^Make emailControllerApi a static final constant or non-public and provide accessors if needed.(İĞ½èùÿÿÿÿ8÷ÔÜ­2J$7ad1e4d9-c0da-4949-8d77-5923d56af9ab
+v
+java:S1444"3Make this "public static defaultClient" field final(ÖŒ¸î8øÔÜ­2J$8de4d954-dc9c-48dc-adc5-b44be9d36d30
+€
+java:S1444"8Make this "public static inboxControllerApi" field final(ÒóÊ¿ùÿÿÿÿ8øÔÜ­2J$6395a97f-68dd-446e-8d74-12acd3c2af29
+q
+java:S1444 ".Make this "public static inboxDto" field final(Û£ñ©8øÔÜ­2J$9dc9aac4-b348-47a3-89c5-4e436451cd78
+n
+java:S1444!"+Make this "public static email" field final(Ÿİ8øÔÜ­2J$a818c818-74b3-429b-adf2-a25985c19926
+u
+java:S1444""-Make this "public static inboxId" field final(¨ï¶‹ùÿÿÿÿ8øÔÜ­2J$569c8727-4365-49f7-a7f3-2821564ec8a3
+|
+java:S1444#":Make this "public static waitForControllerApi" field final(¼æÔU8øÔÜ­2J$063e1c3d-0415-4855-b012-61f522e0ac38
+x
+java:S1444$"0Make this "public static httpClient" field final(êüÕ„ıÿÿÿÿ8øÔÜ­2J$b12c623e-9f40-4385-a8f2-99ed59fa13dd
+€
+java:S1444%"8Make this "public static emailControllerApi" field final(İĞ½èùÿÿÿÿ8øÔÜ­2J$afacf066-cc34-4343-b202-457931e664d8
+]
+java:S1220""Move this file to a named package.8úÔÜ­2J$b25e14be-91c7-4411-92a3-6848f34cf14a
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‘Ç·µ8ÕÜ­2J$da404a33-ad4c-472a-ab41-1c614357e2c6
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(ñ°Áùÿÿÿÿ8íÑà­2J$31aacffc-3fd2-46c9-b5e4-7a44b0b4acf4
+r	java:S106"+Replace this use of System.out by a logger.(ø«Ä®üÿÿÿÿ8¦ìé­2J$56984645-1588-4a83-aaf3-4ea1bd015e66
+~	java:S125"<This block of commented-out lines of code should be removed.(ÕîÍÿ8ã¢ã­2J$5d50edd3-b75d-4c63-bf06-30d68226198b
