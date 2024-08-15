@@ -42,3 +42,7 @@ I
 allure-report/signIn.html,c\e\ce6592dd330e4b59fe1408d0a7ad920f13ca1a30
 S
 #allure-report/signUp_addToCart.html,a\2\a2f4e0bdd1418a9b943f39d17fd5b93c9e508be8
+H
+allure-report/index.html,9\1\9146792892e4a6357e1964157aa76abe912b4556
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

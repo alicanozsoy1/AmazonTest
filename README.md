@@ -1,1 +1,4 @@
-"# techCareer_AmazonTest" 
+"# AmazonTest"
+
+"Allure report with screenshots"
+![img.png](img.png)
