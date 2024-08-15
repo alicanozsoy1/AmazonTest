@@ -19,8 +19,8 @@ public class PageObjectUtil {
     public static JavascriptExecutor js;
     public static Actions actions;
     public static SignUpPage signUpPage;
-
     public static SearchPage searchPage;
+    public static ScreenShotUtil screenShotUtil;
 
     public static void initializeObjects() {
         mainPage = new MainPage();
@@ -30,6 +30,7 @@ public class PageObjectUtil {
         actions = new Actions(getDriver());
         signUpPage = new SignUpPage();
         searchPage = new SearchPage();
+        screenShotUtil = new ScreenShotUtil();
 
     }
 }

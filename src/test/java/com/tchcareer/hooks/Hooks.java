@@ -7,6 +7,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 import static com.tchcareer.driver.Driver.closeDriver;
+import static com.tchcareer.utilities.PageObjectUtil.screenShotUtil;
 
 
 public class Hooks {
@@ -14,6 +15,7 @@ public class Hooks {
     @Before
     public void beforeScenario() {
         PageObjectUtil.initializeObjects();
+        screenShotUtil.screenshot();
     }
 
     @Before(value = "@MailSlurp")
@@ -23,6 +25,7 @@ public class Hooks {
 
     @After
     public void afterScenario(Scenario scenario) {
+        screenShotUtil.screenshot();
          closeDriver();
     }
 

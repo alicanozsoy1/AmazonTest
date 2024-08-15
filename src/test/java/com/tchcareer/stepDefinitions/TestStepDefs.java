@@ -11,7 +11,6 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
-import org.testng.asserts.Assertion;
 
 import static com.tchcareer.driver.Driver.getDriver;
 import static com.tchcareer.pages.MainPage.mainPageAccount;
@@ -19,7 +18,7 @@ import static com.tchcareer.pages.MainPage.mainPageSignIn;
 import static com.tchcareer.pages.SignInPage.mailMissingAlert;
 import static com.tchcareer.utilities.Constants.*;
 import static com.tchcareer.utilities.MailSlurpUtil.inboxDto;
-import static com.tchcareer.utilities.PageObjectUtil.actions;
+import static com.tchcareer.utilities.PageObjectUtil.*;
 import static com.tchcareer.utilities.WaitUtil.waitFor;
 import static com.tchcareer.utilities.WaitUtil.waitForVisibility;
 
@@ -29,6 +28,7 @@ public class TestStepDefs {
         getDriver().get(url);
         waitFor(3);
         SearchPage.cookieReject.click();
+        screenShotUtil.screenshot();
     }
 
     @And("Giris yap butonuna tiklar")
@@ -53,6 +53,7 @@ public class TestStepDefs {
     public void sifreBilgisiniGirer(String password) {
         waitFor(2);
         SignInPage.passwordBox.sendKeys(password);
+        screenShotUtil.screenshot();
     }
 
     @And("Sign in sayfasindaki giris yap butonuna tiklar")
@@ -64,6 +65,7 @@ public class TestStepDefs {
     public void kayitinBasariliSekildeTamamlandigiDogrulanir() {
         waitFor(2);
         Assert.assertEquals(MainPage.mainPageSignedIn.getText(),"Ali");
+        screenShotUtil.screenshot();
     }
 
     @When("Mail bilgisini doldurur {string}")
@@ -108,12 +110,14 @@ public class TestStepDefs {
     @When("Ad soyad alanini doldurur {string}")
     public void adSoyadAlaniniDoldurur(String name) {
         SignUpPage.nameBox.sendKeys(name);
+        screenShotUtil.screenshot();
     }
 
     @And("E-posta alanini doldurur")
     public void ePostaAlaniniDoldurur() {
         String mailSlurpEmail = inboxDto.getEmailAddress();
         SignUpPage.emailBox.sendKeys(mailSlurpEmail);
+        screenShotUtil.screenshot();
     }
 
     @And("Sifre alanini doldurur {string}")
@@ -124,11 +128,13 @@ public class TestStepDefs {
     @And("Sifre kontrol alanini doldurur {string}")
     public void sifreKontrolAlaniniDoldurur(String password) {
         SignUpPage.passwordCheckBox.sendKeys(password);
+        screenShotUtil.screenshot();
     }
 
     @Then("Hesap oluştur butonuna tiklar")
     public void hesapOlusturButonunaTiklar() {
         SignUpPage.createAccount.click();
+        screenShotUtil.screenshot();
     }
 
     @When("Arama cubugundan bir urun aratir")
@@ -136,33 +142,39 @@ public class TestStepDefs {
         waitFor(4);
         MainPage.searchBar.sendKeys("araba");
         MainPage.searchBar.sendKeys(Keys.ENTER);
+        screenShotUtil.screenshot();
     }
 
     @And("Bir urune tiklar")
     public void birUruneTiklar() {
         waitFor(3);
         SearchPage.product.click();
+        screenShotUtil.screenshot();
     }
 
     @And("Urunu sepete atar")
     public void urunuSepeteAtar() {
         waitFor(3);
         SearchPage.addToCart.click();
+        screenShotUtil.screenshot();
     }
 
     @Then("Urun sepete eklenir")
     public void urunSepeteEklenir() {
         waitFor(4);
         Assert.assertEquals(SearchPage.addedCart.getText(),"Sepete Eklendi");
+        screenShotUtil.screenshot();
     }
 
     @And("Sepete git butonuna tiklar")
     public void sepeteGitButonunaTiklar() {
         SearchPage.goToCart.click();
+        screenShotUtil.screenshot();
     }
 
     @And("Urunu sepette goruntuler")
     public void urunuSepetteGoruntuler() {
         Assert.assertEquals(SearchPage.cart.getText(),"Ara toplam (1 ürün):");
+        screenShotUtil.screenshot();
     }
 }

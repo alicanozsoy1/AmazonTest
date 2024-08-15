@@ -6,7 +6,7 @@ import static com.tchcareer.driver.Driver.getDriver;
 public abstract class ParentPage {
 
     public ParentPage() {
-        PageFactory.initElements(getDriver(),this);
+        PageFactory.initElements(getDriver(), this);
     }
 
 }

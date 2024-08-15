@@ -12,7 +12,7 @@ import static io.cucumber.testng.CucumberOptions.SnippetType.CAMELCASE;
                 plugin = {"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},
                 features = "src/test/resources/features/",
                 glue = {"com/tchcareer/stepDefinitions","com/tchcareer/hooks"},
-                tags ="@Smoke",
+                tags ="@AddToCart",
                 dryRun = false,
                 publish = true,
                 monochrome = false,
